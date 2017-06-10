@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyTextField_Example' do
+  pod 'SwiftyTextField', :path => '../'
+
+  target 'SwiftyTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
