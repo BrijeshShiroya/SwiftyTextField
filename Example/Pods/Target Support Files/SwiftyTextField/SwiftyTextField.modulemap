@@ -1,0 +1,6 @@
+framework module SwiftyTextField {
+  umbrella header "SwiftyTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

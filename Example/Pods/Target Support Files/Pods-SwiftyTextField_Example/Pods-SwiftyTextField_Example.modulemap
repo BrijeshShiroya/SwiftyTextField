@@ -1,0 +1,6 @@
+framework module Pods_SwiftyTextField_Example {
+  umbrella header "Pods-SwiftyTextField_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
