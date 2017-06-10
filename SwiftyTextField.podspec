@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyTextField'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'SwiftyTextField is custom textfield that is change automatically background color of textfield.'
 
 # This description is used to generate tags and improve search results.
