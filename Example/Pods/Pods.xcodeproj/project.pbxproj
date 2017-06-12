@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2232B2E11EEBB6E50079FCE1 /* SwiftyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232B2E01EEBB6E50079FCE1 /* SwiftyTextField.swift */; };
 		2B7B2F0C72A8C5D1ABA569E9311D375E /* Pods-SwiftyTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923796731E12C5133788D1B39B2E6212 /* Pods-SwiftyTextField_Tests-dummy.m */; };
 		30D1ADDA64C3D90697DE37AF37F2B57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		33358C823EC16052D2A0F49E139B3239 /* SwiftyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D31BB110D5C6F99041F54386BE66603E /* SwiftyTextField-dummy.m */; };
 		4E762994A342138014D63877351E9AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		58C8B8959FF00EE61B360F9E0D392ADE /* SwiftyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816652A0A8017367F059F879EE0787D1 /* SwiftyTextField.swift */; };
 		5D1D8A474EE2B4994DE93C4BA8C42AA9 /* SwiftyTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A31B4D32A10A40F401E430D5A9EEEE4 /* SwiftyTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D313DBA5970F3048A54B05155A3824F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		657C994753C77CE016EFF260C834CF25 /* Pods-SwiftyTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0545CE8AFB5437D7279DC3905EB5E8E0 /* Pods-SwiftyTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BB22ED1C651100CFE723DC43C4A4AD3 /* Pods-SwiftyTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11409EA09AA66F0DA267553F5A753351 /* Pods-SwiftyTextField_Example-dummy.m */; };
+		A285DAA1293C8E5DF04E7F4E337A97F2 /* SwiftyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D31BB110D5C6F99041F54386BE66603E /* SwiftyTextField-dummy.m */; };
 		AB29B3DD4B395D37409C10698EA42ABF /* Pods-SwiftyTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D4373CE88D6135B932161A3260D4AC /* Pods-SwiftyTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,9 +32,8 @@
 /* Begin PBXFileReference section */
 		0545CE8AFB5437D7279DC3905EB5E8E0 /* Pods-SwiftyTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyTextField_Example-umbrella.h"; sourceTree = "<group>"; };
 		11409EA09AA66F0DA267553F5A753351 /* Pods-SwiftyTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyTextField_Example-dummy.m"; sourceTree = "<group>"; };
-		2232B2E01EEBB6E50079FCE1 /* SwiftyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTextField.swift; sourceTree = "<group>"; };
 		2BD2CFA1E578D4751D82CFFF08393BFB /* SwiftyTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTextField-prefix.pch"; sourceTree = "<group>"; };
-		2D785717BC1D2230B11FF3201E4297A3 /* Pods-SwiftyTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		2D785717BC1D2230B11FF3201E4297A3 /* Pods-SwiftyTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftyTextField_Tests.modulemap"; sourceTree = "<group>"; };
 		3482E79ACFD3E0867D20B25D14B27369 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9DCA83D1A271927EB872E184C48844 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58EF9B5EFAFBA71DDF651C3ADCAECF96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,16 +41,17 @@
 		69D4373CE88D6135B932161A3260D4AC /* Pods-SwiftyTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6CF6DDFA8BCA39C402CD34A9219734AF /* Pods-SwiftyTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73DD57377975A42A8AE664CD8DABA476 /* SwiftyTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyTextField.xcconfig; sourceTree = "<group>"; };
-		7FE8C86E742A346AB0A36BC0C1B94E49 /* Pods_SwiftyTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE8C86E742A346AB0A36BC0C1B94E49 /* Pods_SwiftyTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyTextField_Example.framework; path = "Pods-SwiftyTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		816652A0A8017367F059F879EE0787D1 /* SwiftyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyTextField.swift; sourceTree = "<group>"; };
 		923796731E12C5133788D1B39B2E6212 /* Pods-SwiftyTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyTextField_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9611AE0D4134E9A468EB75BD5A37BCA6 /* Pods-SwiftyTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		982B5E64AAA792C94D74D2478245E89A /* Pods-SwiftyTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
-		985EBC651675B072406A35EF72027801 /* Pods-SwiftyTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyTextField_Example.modulemap"; sourceTree = "<group>"; };
+		985EBC651675B072406A35EF72027801 /* Pods-SwiftyTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftyTextField_Example.modulemap"; sourceTree = "<group>"; };
 		9A31B4D32A10A40F401E430D5A9EEEE4 /* SwiftyTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTextField-umbrella.h"; sourceTree = "<group>"; };
 		9AAE54EEC1FEA1C62A743FEB284F8AD9 /* Pods-SwiftyTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9E1A9DE90318A5CE694182F409C63BDC /* Pods-SwiftyTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyTextField_Example-resources.sh"; sourceTree = "<group>"; };
-		A705D12D7896576542705A76FB77BF04 /* SwiftyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyTextField.modulemap; sourceTree = "<group>"; };
+		A705D12D7896576542705A76FB77BF04 /* SwiftyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyTextField.modulemap; sourceTree = "<group>"; };
 		AA542CF9E4A1177877FE5CEC7DA6256F /* Pods-SwiftyTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyTextField_Tests-resources.sh"; sourceTree = "<group>"; };
 		B3468CDE5BB0D2C3B5ED17492613FDE1 /* Pods-SwiftyTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB0C80C6DB9E67E9B7A2CB3ED25D37BC /* Pods-SwiftyTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		D1836014021B86EA1A6B2101D22FB6F5 /* Pods-SwiftyTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D31BB110D5C6F99041F54386BE66603E /* SwiftyTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyTextField-dummy.m"; sourceTree = "<group>"; };
 		D6FB4B8BB9E26F12AD68B4D7164DAAB8 /* Pods-SwiftyTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E399CF381716FD712A40460212A6AEA7 /* Pods_SwiftyTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3E324097C616C55153610E92DD47475 /* SwiftyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E399CF381716FD712A40460212A6AEA7 /* Pods_SwiftyTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyTextField_Tests.framework; path = "Pods-SwiftyTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E324097C616C55153610E92DD47475 /* SwiftyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyTextField.framework; path = SwiftyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF7688F54A6179644358D435C26A502 /* Pods-SwiftyTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,11 +123,12 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		457398C422E40317F562ECD6E7408832 /* Classes */ = {
+		65702BABAE64681E52A312774BD5703A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2232B2E01EEBB6E50079FCE1 /* SwiftyTextField.swift */,
+				816652A0A8017367F059F879EE0787D1 /* SwiftyTextField.swift */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -191,8 +192,9 @@
 		B8B512A922C228BC573BEE80B5803AAB /* SwiftyTextField */ = {
 			isa = PBXGroup;
 			children = (
-				457398C422E40317F562ECD6E7408832 /* Classes */,
+				65702BABAE64681E52A312774BD5703A /* Classes */,
 			);
+			name = SwiftyTextField;
 			path = SwiftyTextField;
 			sourceTree = "<group>";
 		};
@@ -291,7 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0726ACC8F892271199F8581D1AF8039 /* Build configuration list for PBXNativeTarget "SwiftyTextField" */;
 			buildPhases = (
-				64F7CAE168CB30320B7E3BD4839985AA /* Sources */,
+				999506DE9A85E32A196CFF1621EACD1F /* Sources */,
 				AFFA5F0D1E0DB4F2C9E3FF8616B9092D /* Frameworks */,
 				6F4A48A85DF18C0197460A76C01DC2F6 /* Headers */,
 			);
@@ -312,11 +314,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					2B0E45433770B78A80C85E8EB91CCF32 = {
-						LastSwiftMigration = 0830;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,15 +340,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB22ED1C651100CFE723DC43C4A4AD3 /* Pods-SwiftyTextField_Example-dummy.m in Sources */,
-				2232B2E11EEBB6E50079FCE1 /* SwiftyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64F7CAE168CB30320B7E3BD4839985AA /* Sources */ = {
+		999506DE9A85E32A196CFF1621EACD1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33358C823EC16052D2A0F49E139B3239 /* SwiftyTextField-dummy.m in Sources */,
+				A285DAA1293C8E5DF04E7F4E337A97F2 /* SwiftyTextField-dummy.m in Sources */,
+				58C8B8959FF00EE61B360F9E0D392ADE /* SwiftyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +424,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 982B5E64AAA792C94D74D2478245E89A /* Pods-SwiftyTextField_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -616,7 +612,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBF7688F54A6179644358D435C26A502 /* Pods-SwiftyTextField_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
