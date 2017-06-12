@@ -31,7 +31,13 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="MaxLength">
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldType" value="mobile"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldType" value="MoBile"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="LeftPadding">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="RightPadding">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>

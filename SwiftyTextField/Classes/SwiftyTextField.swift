@@ -21,8 +21,6 @@ public enum SwiftyTextFieldType: String{
 @IBDesignable
 public class SwiftyTextField:UITextField{
   //MARK: - Variables -
-  public var leftPaddingSpace:CGFloat = 0.0
-  public var rightPaddingSpace:CGFloat = 0.0
   public var maximumTextLength:Int = 255
   public var currentTextFieldType:String = SwiftyTextFieldType.None.rawValue
   
@@ -55,7 +53,6 @@ public class SwiftyTextField:UITextField{
    */
   @IBInspectable public var LeftPadding:CGFloat = 0.0{
     didSet{
-      self.leftPaddingSpace = LeftPadding
     }
   }
   
@@ -64,7 +61,6 @@ public class SwiftyTextField:UITextField{
    */
   @IBInspectable public var RightPadding:CGFloat = 0.0{
     didSet{
-      self.rightPaddingSpace = RightPadding
     }
   }
   
@@ -112,15 +108,15 @@ public class SwiftyTextField:UITextField{
    set left,right,bottom and top space into textfield. Set four side space when user editing or after editing or before editing.
    */
   override public func textRect(forBounds bounds: CGRect) -> CGRect {
-    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.leftPaddingSpace, bottom: 0.0, right: self.rightPaddingSpace))
+    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.LeftPadding, bottom: 0.0, right: self.RightPadding))
   }
   
   override public func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.leftPaddingSpace, bottom: 0.0, right: self.rightPaddingSpace))
+    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.LeftPadding, bottom: 0.0, right: self.RightPadding))
   }
   
   override public func editingRect(forBounds bounds: CGRect) -> CGRect {
-    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.leftPaddingSpace, bottom: 0.0, right: self.rightPaddingSpace))
+    return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets.init(top: 0, left: self.LeftPadding, bottom: 0.0, right: self.RightPadding))
   }
 }
 
@@ -132,7 +128,7 @@ extension SwiftyTextField:UITextFieldDelegate{
     let newString = NSString(string: textField.text!).replacingCharacters(in: range, with: string)
     let strTrimmed = (NSString(string:newString)).trimmingCharacters(in: CharacterSet.whitespaces)//remove white space
     isValidTextField = strTrimmed.characters.count <= self.maximumTextLength
-    if(self.currentTextFieldType == SwiftyTextFieldType.PostalCode.rawValue || self.currentTextFieldType == SwiftyTextFieldType.Mobile.rawValue){
+    if(self.TextFieldType == SwiftyTextFieldType.PostalCode.rawValue || self.currentTextFieldType == SwiftyTextFieldType.Mobile.rawValue){
       if isValidTextField{
         let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
         let compSepByCharInSet = string.components(separatedBy: aSet)
