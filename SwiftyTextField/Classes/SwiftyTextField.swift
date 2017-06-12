@@ -17,13 +17,12 @@ public enum SwiftyTextFieldType: String{
   case PostalCode = "postalcode"
 }
 
-
-@objc protocol SwiftyTextFieldDelegate {
-  @objc optional func textField(_ textField: SwiftyTextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
-  @objc optional func textFieldShouldEndEditing(_ textField: SwiftyTextField) -> Bool
-  @objc optional func textFieldDidEndEditing(_ textField: SwiftyTextField)
-  @objc optional func textFieldDidBeginEditing(_ textField: SwiftyTextField)
-  @objc optional func textFieldShouldReturn(_ textField: SwiftyTextField) -> Bool
+@objc public protocol SwiftyTextFieldDelegate : class {
+   @objc optional func textField(_ textField: SwiftyTextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+   @objc optional func textFieldShouldEndEditing(_ textField: SwiftyTextField) -> Bool
+   @objc optional func textFieldDidEndEditing(_ textField: SwiftyTextField)
+   @objc optional func textFieldDidBeginEditing(_ textField: SwiftyTextField)
+   @objc optional func textFieldShouldReturn(_ textField: SwiftyTextField) -> Bool
 }
 
 @IBDesignable

@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyTextField
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,SwiftyTextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,4 +33,7 @@ class ViewController: UIViewController {
     }
 
 }
+
+
+
 

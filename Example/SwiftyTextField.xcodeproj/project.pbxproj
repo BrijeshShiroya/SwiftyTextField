@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		E9592D411EEE5860001CA4B2 /* SwiftyTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9592D401EEE5860001CA4B2 /* SwiftyTextField.framework */; };
+		E9592D431EEEAD1A001CA4B2 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9592D421EEEAD1A001CA4B2 /* ViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		AF916DC4099019F35F5AEA4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE4FF56FB17026DF30EF80C6 /* SwiftyTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyTextField.podspec; path = ../SwiftyTextField.podspec; sourceTree = "<group>"; };
 		E9592D401EEE5860001CA4B2 /* SwiftyTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyTextField.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftyTextField-cogvnwzjojtcnhdpwggpgaxobfyr/Build/Products/Debug-iphonesimulator/SwiftyTextField/SwiftyTextField.framework"; sourceTree = "<group>"; };
+		E9592D421EEEAD1A001CA4B2 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		FB5E6167BF5A05A2ABEDA55B /* Pods_SwiftyTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E9592D421EEEAD1A001CA4B2 /* ViewController1.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9592D431EEEAD1A001CA4B2 /* ViewController1.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
