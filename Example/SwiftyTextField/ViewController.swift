@@ -19,7 +19,8 @@ class ViewController: UIViewController {
       txt.leftPaddingSpace = 20.0//left space
       txt.rightPaddingSpace = 20.0//right space
       txt.CornerRadius = 12.0//set corner radius
-      txt.maximumTextLength = 2//set max length
+      txt.maximumTextLength = 12//set max length
+      txt.currentTextFieldType = SwiftyTextFieldType.Mobile.rawValue//settextfieldtype
       self.view.addSubview(txt)
       
         // Do any additional setup after loading the view, typically from a nib.

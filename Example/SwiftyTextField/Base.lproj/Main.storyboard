@@ -29,8 +29,9 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="MaxLength">
-                                        <integer key="value" value="2"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldType" value="mobile"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>

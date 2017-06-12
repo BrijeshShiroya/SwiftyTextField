@@ -7,12 +7,24 @@
 //
 import Foundation
 import UIKit
+
+public enum SwiftyTextFieldType: String{
+  case None = "none"
+  case Email = "email"
+  case Mobile = "mobile"
+  case Password = "password"
+  case DateOfBirth = "dateofbirth"
+  case PostalCode = "postalcode"
+}
+
+
 @IBDesignable
 public class SwiftyTextField:UITextField{
   //MARK: - Variables -
   public var leftPaddingSpace:CGFloat = 0.0
   public var rightPaddingSpace:CGFloat = 0.0
   public var maximumTextLength:Int = 255
+  public var currentTextFieldType:String = SwiftyTextFieldType.None.rawValue
   
   //MARK: - Initialization -
   override public init(frame: CGRect) {
@@ -67,6 +79,17 @@ public class SwiftyTextField:UITextField{
     }
   }
   
+  /*
+   set textfield type like none,email,mobile, password,dateofbirth, postalcode
+   */
+  @IBInspectable public var TextFieldType:String?{
+    didSet{
+      if let textFieldType = SwiftyTextFieldType.init(rawValue: TextFieldType?.lowercased() ?? ""){
+        self.currentTextFieldType = textFieldType.rawValue
+      }
+    }
+  }
+  
   
   //MARK: - Email Validation
   //check email validation if valid email id then return true otherwise return false
@@ -77,15 +100,13 @@ public class SwiftyTextField:UITextField{
   }
   
   //MARK: - Mobile Validation
-   //check mobile/phone validation if valid Phone/mobile then return true otherwise return false
+  //check mobile/phone validation if valid Phone/mobile then return true otherwise return false
   func isValidMobile(lengthNumber:Int) -> Bool{
     let PHONE_REGEX = "^\\d{\(lengthNumber)}$"
     let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
     let result =  phoneTest.evaluate(with: self)
     return result
   }
-  
-  
   
   /*
    set left,right,bottom and top space into textfield. Set four side space when user editing or after editing or before editing.
@@ -107,9 +128,19 @@ public class SwiftyTextField:UITextField{
 //MARK: - Textfield Delegates -
 extension SwiftyTextField:UITextFieldDelegate{
   public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    var isValidTextField:Bool = true
     let newString = NSString(string: textField.text!).replacingCharacters(in: range, with: string)
     let strTrimmed = (NSString(string:newString)).trimmingCharacters(in: CharacterSet.whitespaces)//remove white space
-    return strTrimmed.characters.count <= self.maximumTextLength
+    isValidTextField = strTrimmed.characters.count <= self.maximumTextLength
+    if(self.currentTextFieldType == SwiftyTextFieldType.PostalCode.rawValue || self.currentTextFieldType == SwiftyTextFieldType.Mobile.rawValue){
+      if isValidTextField{
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        isValidTextField = (string == numberFiltered)
+      }
+    }
+    return isValidTextField
   }
 }
 
