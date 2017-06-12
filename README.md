@@ -11,6 +11,22 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+## Menual installation
+
+Make SwiftyTextFielf programatically
+
+```ruby
+let txtfield:SwiftyTextField = SwiftyTextField.init(frame: CGRect.init(x: X, y: Y, width: WIDTH, height: HEIGHT))
+      txtfield.backgroundColor = .red
+      txtfield.LeftPadding = LEFTSPACE//left space
+      txtfield.RightPadding = RIGHTSPACE//right space
+      txtfield.CornerRadius = CORNERRADIUS//set corner radius
+      txtfield.maximumTextLength = LENGTH//set max length
+      txtfield.TextFieldType = TYPE//SwiftyTextFieldType.DateOfBirth.rawValue//settextfieldtype
+      txtfield.configSwiftyTextField()
+      self.view.addSubview(txtfield)
+```
+
 ## Installation
 
 SwiftyTextField is available through [CocoaPods](http://cocoapods.org). To install
