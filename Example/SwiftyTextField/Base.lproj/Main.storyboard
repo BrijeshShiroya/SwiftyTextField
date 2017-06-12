@@ -29,9 +29,9 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="MaxLength">
-                                        <integer key="value" value="12"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldType" value="MoBile"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldType" value="MobiLe"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="LeftPadding">
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
